@@ -1,0 +1,26 @@
+@import "./styles.scss";
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Titillium-regular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */      
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .content {
+        padding: 20px;
+        overflow-y: auto;
+        display: flex;
+        flex-grow: 1;
+    }
+}

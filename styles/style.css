@@ -1,0 +1,68 @@
+body.dark-blue {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #152233;
+  color: #F3F3F3; }
+  body.dark-blue header, body.dark-blue footer {
+    background-color: #203040;
+    color: #F3F3F3; }
+  body.dark-blue h1, body.dark-blue h2, body.dark-blue h3, body.dark-blue h4, body.dark-blue h5, body.dark-blue h6 {
+    color: #cb6447; }
+  body.dark-blue input, body.dark-blue select {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #203040;
+    background-color: #203040;
+    color: #F3F3F3;
+    padding: 5px; }
+  body.dark-blue input[type=button], body.dark-blue select {
+    border-color: #cb6447; }
+  body.dark-blue input[type=text], body.dark-blue input[type=""] {
+    border-bottom: 1px solid #cb6447; }
+
+body.old-base {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #000; }
+  body.old-base header, body.old-base footer {
+    background-color: #000030;
+    color: #fff; }
+  body.old-base h1, body.old-base h2, body.old-base h3, body.old-base h4, body.old-base h5, body.old-base h6 {
+    color: #cb6447; }
+  body.old-base input, body.old-base select {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #000030;
+    background-color: #000030;
+    color: #fff;
+    padding: 5px; }
+  body.old-base input[type=button], body.old-base select {
+    border-color: #000030; }
+  body.old-base input[type=text], body.old-base input[type=""] {
+    border-bottom: 1px solid #000030; }
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Titillium-regular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */ }
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; }
+  body .content {
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-grow: 1; }

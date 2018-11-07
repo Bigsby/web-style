@@ -1,0 +1,22 @@
+{
+  "name": "web-style",
+  "version": "1.0.0",
+  "description": "Testing web styles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bigsby/web-style.git"
+  },
+  "author": "bigsby",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Bigsby/web-style/issues"
+  },
+  "homepage": "https://github.com/Bigsby/web-style#readme",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
