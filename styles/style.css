@@ -7,7 +7,9 @@ body.dark-blue {
     color: #F3F3F3; }
   body.dark-blue h1, body.dark-blue h2, body.dark-blue h3, body.dark-blue h4, body.dark-blue h5, body.dark-blue h6 {
     color: #cb6447; }
-  body.dark-blue input, body.dark-blue select {
+  body.dark-blue input, body.dark-blue textarea, body.dark-blue select {
+    cursor: pointer;
+    outline: none;
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
@@ -15,6 +17,14 @@ body.dark-blue {
     background-color: #203040;
     color: #F3F3F3;
     padding: 5px; }
+    body.dark-blue input:focus, body.dark-blue textarea:focus, body.dark-blue select:focus {
+      outline: none; }
+  body.dark-blue select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #F3F3F3; }
+  body.dark-blue input::-moz-focus-inner, body.dark-blue select::-moz-focus-inner {
+    outline: none;
+    border: 0; }
   body.dark-blue input[type=button], body.dark-blue select {
     border-color: #cb6447; }
   body.dark-blue input[type=text], body.dark-blue input[type=""] {
@@ -29,7 +39,9 @@ body.old-base {
     color: #fff; }
   body.old-base h1, body.old-base h2, body.old-base h3, body.old-base h4, body.old-base h5, body.old-base h6 {
     color: #cb6447; }
-  body.old-base input, body.old-base select {
+  body.old-base input, body.old-base textarea, body.old-base select {
+    cursor: pointer;
+    outline: none;
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
@@ -37,6 +49,14 @@ body.old-base {
     background-color: #000030;
     color: #fff;
     padding: 5px; }
+    body.old-base input:focus, body.old-base textarea:focus, body.old-base select:focus {
+      outline: none; }
+  body.old-base select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #fff; }
+  body.old-base input::-moz-focus-inner, body.old-base select::-moz-focus-inner {
+    outline: none;
+    border: 0; }
   body.old-base input[type=button], body.old-base select {
     border-color: #000030; }
   body.old-base input[type=text], body.old-base input[type=""] {

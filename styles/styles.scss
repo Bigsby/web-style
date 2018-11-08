@@ -4,6 +4,7 @@
     $header-background,
     $header-color,
     $h-color,
+    $input-color,
     $input-background,
     $input-border) {
     background-color: $background;
@@ -18,7 +19,8 @@
         color: $h-color;
     }
 
-    input, select {
+    input, textarea, select {
+        outline: none;
         border-width: 1px;
         border-style: solid;
         border-radius: 5px;
@@ -26,6 +28,19 @@
         background-color: $input-background;
         color: $header-color;
         padding: 5px;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    select:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 $input-color;
+    }
+
+    input::-moz-focus-inner, select::-moz-focus-inner { 
+        outline: none;
+        border: 0; 
     }
 
     input[type=button], select {
@@ -39,12 +54,12 @@
 
 body.dark-blue {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    @include createStyle(#152233, #F3F3F3, #203040, #F3F3F3, #cb6447, #203040, #cb6447);
+    @include createStyle(#152233, #F3F3F3, #203040, #F3F3F3, #cb6447, #F3F3F3, #203040, #cb6447);
 }
 
 body.old-base {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    @include createStyle(#fff, #000, #000030, #fff, #cb6447, #000030, #000030);
+    @include createStyle(#fff, #000, #000030, #fff, #cb6447, #fff, #000030, #000030);
     // font-size: 20px;
 
     // header {
